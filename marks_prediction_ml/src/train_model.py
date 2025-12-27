@@ -1,6 +1,3 @@
-# train_model.py
-# Predict marks based on hours studied using Linear Regression
-
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -33,9 +30,7 @@ y = df['marks']     # 1D
 # -------------------------
 # Step 4: Train-test split
 # -------------------------
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # -------------------------
 # Step 5: Train the model
